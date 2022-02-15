@@ -1,0 +1,771 @@
+@charset "utf-8";
+/*Genel Site Modeli
+Yazan: Ümit Tunç
+2011 Aralık Sonu
+*/
+<!--
+ h1 {
+	border-bottom:solid 1px #004F80;
+	margin-left:5px;
+	text-align:right;
+	font-size:24px;
+	color:#E00A00;
+}
+body{
+	background:url("../resimler/tema/fligran.jpg");
+}
+
+#site {
+	padding: 10px;
+	width: 936px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	background-color: #FFF;
+	border:solid 1px #ccc;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	box-shadow:0px 0px 5px #000;
+	-moz-box-shadow:0px 0px 10px #000;
+	-webkit-box-shadow:0px 0px 5px #000;
+}
+#site #banner #navigasyon #menuOrta ul li:hover ul {
+	display: block;
+}
+#site #navigasyon {
+	height: 54px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	z-index: 100000;
+}
+#site #navigasyon #menuSol {
+	background-image: url(../resimler/tema/navigasyon/menuSol.png);
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	height: 54px;
+	width: 12px;
+}
+#site #navigasyon #menuSag {
+	background-image: url(../resimler/tema/navigasyon/menuSag.png);
+	float: right;
+	height: 54px;
+	width: 12px;
+}
+#site #navigasyon #menuOrta {
+	background-image: url(../resimler/tema/navigasyon/menuOrta.png);
+	float: left;
+	height: 54px;
+	width: 912px;
+	position: relative;
+	white-space: nowrap;
+}
+#site #navigasyon #menuOrta ul {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	margin: 0px;
+	padding: 0px;
+	width: 900px;
+	z-index: 300000;
+}
+#site #navigasyon #menuOrta a {
+	text-decoration: none;
+	color: #FFF;
+}
+#site #navigasyon #menuOrta > ul > li {
+	list-style-type: none;
+	float: left;
+	margin-top: 0px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 10px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	position: relative;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0px;
+	padding: 10px;
+	background-color: #CCC;
+}
+#menuOrta ul li a:hover {
+	color: #0FF;
+}
+#menuOrta ul li:hover {
+	background-color: #00314F;
+}
+#slogan {
+	background-image: url(../resimler/tema/slogan.png);
+	position: absolute;
+	height: 103px;
+	width: 165px;
+	top: 30px;
+	right: 180px;
+}
+#site #icerikOrta {
+	margin-top: 15px;
+	position: relative;
+	overflow:hidden;
+}
+#site #icerikYazi {
+	position:relative;
+	float:left;
+	width:auto;
+	margin-left:5px;
+	margin-right:10px;
+}
+#site #icerikOrta #etkinlik #icerik {
+	position: absolute;
+	height: 180px;
+	width: 370px;
+	top: 40px;
+	left: 40px;
+	font-family: "Comic Sans MS", cursive;
+	overflow: hidden;
+}
+#site #icerikOrta #altSutun {
+	height: 137px;
+	width: 934px;
+	border: 1px solid #CCC;
+	margin-top: 30px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+}
+.sutun {
+	position:relative;
+	float:left;
+	width:128px;
+	height:128px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	border: 1px solid #ccc;
+	margin:10px;
+	
+
+}
+.sutun .bildirim {
+	background-image: url(../resimler/ikon/bil.png);
+	position: absolute;
+	top:0px;
+	right:0px;
+	font-size:14px;
+	text-align:center;
+	width:32px;
+	height:25px;
+	padding-top:7px;
+
+}
+.sutun:hover {
+	background-color: #ccc;
+
+}
+.sutun .yazi {
+	position:absolute;
+	bottom:3px;
+	left:3px;
+	width:95%;
+	background-color:#fff;
+	opacity:0.7;
+	text-align:center;
+	font-size:20px;
+}
+#site #icerikOrta #altSutun .bolum {
+	margin: 4px;
+	float: left;
+	height: 110px;
+	width: 225px;
+	text-align: center;
+	padding-top: 25px;
+	opacity: 0.7;
+}
+#site #icerikOrta #altIcerik #sol {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	height: auto;
+	width: 250px;
+	overflow:hidden;
+}
+#site #icerikOrta #altSutun .bolum:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+#site #icerikOrta #etkinlik #icerik h1 {
+	font-size: 16px;
+	margin: 0px;
+	text-align: right;
+	color: #676505;
+}
+#site #icerikOrta #etkinlik #icerik ul li a {
+	text-decoration: none;
+	color: #7B7806;
+	font-size: 12px;
+}
+#site #icerikOrta #etkinlik #icerik ul li {
+	list-style-position: outside;
+	background-image: url(../resimler/tema/etkinlik/cursor.png);
+	background-repeat: no-repeat;
+	padding-left: 28px;
+	height: 25px;
+	list-style-type: none;
+}
+#site #icerikOrta #manset {
+	position: relative;
+}
+#resimAlani {
+	position: absolute;
+	height: 290px;
+	width: 495px;
+	left: 7px;
+	top: 10px;
+}
+#resimAlani li .altYazi {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	opacity:0.7;
+	background-color:#FFF;
+	z-index:1001;
+	color:#000;
+	}
+#manset #resimAlani ul {
+	position: absolute;
+	left: 0px;
+	bottom: -15px;
+	margin: 0px;
+	padding: 0px;
+	width: 498px;
+	background-image: url(../resimler/tema/manset/mansetNumaraAltCubuk.png);
+	background-repeat: no-repeat;
+	z-index:1000;
+}
+#site #icerikOrta #etkinlik {
+	position: absolute;
+	height: 269px;
+	width: 240px;
+	top: 150px;
+	right: 20px;
+	z-index: 1000;
+}
+.yuzenKutu {
+	position: absolute;
+	z-index: 1500;
+	top: 150px;
+	right: -10px;
+}
+#manset #resimAlani .altResim {
+	display: none;
+}
+#site #banner {
+	background-image: url(../resimler/tema/cicekler.jpg);
+	height: 209px;
+	width: 936px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+}
+#amblem {
+	background-image: url(../resimler/tema/amblem.png);
+	height: 142px;
+	width: 177px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#manset {
+	background-image: url(../resimler/tema/manset/mansetAlt.png);
+	height: 311px;
+	width: 518px;
+}
+#manset #resimAlani ul li {
+	float: left;
+	list-style-type: none;
+	font-size: 20px;
+	text-align: center;
+	height: 43px;
+	width: 51px;
+	padding-top: 8px;
+	margin-right: 4px;
+	z-index: 1000;
+	margin-top: -5px;
+	font-weight:bold;
+}
+#resimAlani .altResim {
+	position: absolute;
+	left: 0px;
+	top: -260px;
+	overflow: hidden;
+	height: 245px;
+	z-index:0;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	border:solid 3px #666;
+}
+#resimAlani .altResim img {
+}
+#manset #resimAlani li:hover div.altResim {
+	display: block;
+}
+#manset #resimAlani li:first-child div.altResim {
+	display: block;
+}
+#manset #resimAlani ul li:hover {
+	background-image: url(../resimler/tema/manset/mansetNumaraAlt.png);
+	background-position: center top;
+	cursor:pointer;
+}
+#site #icerikOrta #etkinlik #icerik ul li a:hover {
+	text-decoration: underline;
+}
+#site #icerikOrta #etkinlik #icerik ul {
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#site #icerikOrta #altIcerik #sag {
+	float: right;
+	width: 230px;
+	margin-left: 20px;
+}
+#site #icerikOrta #altIcerik #orta {
+	float: left;
+	width: 406px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+#site #icerikOrta #altIcerik #sol #baslik {
+	background-image: url(../resimler/tema/koseYazari/koseYazariBaslik.png);
+	height: 66px;
+	width: 250px;
+}
+#site #icerikOrta #altIcerik {
+	margin-top: 25px;
+}
+#site #icerikOrta #altIcerik #sol #yazarlar .yazar {
+	width: 250px;
+	position: relative;
+	height: 100px;
+	margin-top: 10px;
+	background-image: url(../resimler/tema/koseYazari/yazarAlt.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	overflow: hidden;
+}
+#site #icerikOrta #altIcerik #sol #yazarlar .yazar .isim {
+	background-image: url(../resimler/tema/koseYazari/koseYazarIsimCubuk.png);
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 245px;
+	position: absolute;
+	text-align: right;
+	padding-top: 5px;
+	padding-right: 5px;
+	font-weight: bold;
+	font-size: 12px;
+	bottom: 10px;
+	right: 0px;
+	background-position: right;
+	color: #FFF;
+}
+#site #icerikOrta #altIcerik #sol #yazarlar .yazar .yazi {
+	height: 65px;
+	width: 145px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 5px;
+	overflow: hidden;
+	font-size: 12px;
+}
+#site #icerikOrta #altIcerik #sol #yazarlar .yazar .resim {
+	height: 70px;
+	width: 67px;
+	position: absolute;
+}
+#yazarlar {
+	float:left;
+	background-color:#fff;
+}
+#site #icerikOrta #altIcerik #sol #yazarlar .yazar .yazi a {
+	text-decoration: none;
+	color: #000;
+}
+#site #icerikOrta #altIcerik #sol #yazarlar .yazar .yazi a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+#site #icerikOrta #altIcerik #orta .ortaKategori .baslik {
+	background-image: url(../resimler/tema/ortaHaber/ortaHaberBaslik.png);
+	height: 37px;
+	width: 387px;
+	padding-top: 12px;
+	padding-right: 10px;
+	text-align: right;
+	font-weight: bolder;
+	font-size: 16px;
+}
+#site #icerikOrta #altIcerik #orta .ortaKategori {
+	margin-left: 20px;
+	background-image: url(../resimler/tema/ortaHaber/alt.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+#site #icerikOrta #altIcerik #orta .ortaKategori:hover {
+	background-image: url(../resimler/tema/ortaHaber/alt2.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#site #icerikOrta #altIcerik #orta .ortaKategori .satirlar ul li a {
+	text-decoration: none;
+	color: #666;
+}
+#site #icerikOrta #altIcerik #orta .ortaKategori .satirlar ul li a:hover {
+	text-decoration: underline;
+}
+#site #icerikOrta #altIcerik #orta .ortaKategori .satirlar ul li {
+	background-image: url(../resimler/tema/ortaHaber/cursor.png);
+	height: 30px;
+	padding-left: 40px;
+	background-repeat: no-repeat;
+	padding-top: 5px;
+	list-style-type: none;
+}
+#site #icerikOrta #altIcerik #orta .ortaKategori .satirlar {
+	width: 397px;
+}
+#site #icerikOrta #altIcerik #sag #icerik .sagListe  {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#site #icerikOrta #altIcerik #sag .sagListe li   {
+	list-style-type: none;
+	background-image: url(../resimler/tema/ortaHaber/cursor.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	padding-left: 40px;
+	padding-top: 5px;
+	font-size: 12px;
+	color: #666;
+}
+#site #icerikOrta #altIcerik #sag #icerik .sagListe li a  {
+	text-decoration: none;
+	color: #666;
+}
+#site #altKisim {
+	background-image: url(../resimler/tema/altKisim.png);
+	width: 936px;
+	height: 31px;
+	position: relative;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#site #icerikOrta #altIcerik #sag #icerik .sagListe li a:hover {
+	text-decoration: underline;
+}
+#site #banner #navigasyon #menuOrta ul li ul {
+	display: none;
+	background-color: #00314F;
+	position: absolute;
+	height: auto;
+	width: 150px;
+	top: 27px;
+	z-index: 10;
+	margin: 0px;
+	padding: 5px;
+	left: 0px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+}
+#site #banner #navigasyon #menuOrta ul li ul li a {
+	color: #FFF;
+}
+#site #banner #navigasyon #menuOrta ul li ul li:hover a {
+	font-size:12px;
+	color: #FCC;
+}
+#site #banner #navigasyon #menuOrta ul li ul li:hover {
+	color: #000;
+	background-image: url(../resimler/tema/menuUzerinde.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding-left: 0px;
+	text-align:center;
+}
+#site #banner #navigasyon #menuOrta ul li ul li {
+	list-style-type: none;
+	background-image: url(../resimler/tema/ok.png);
+	height: 18px;
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	font-size:10px;
+	background-position: 1px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#site #banner #serencam {
+	background-image: url(../resimler/tema/serencamsol.png);
+	height: 200px;
+	width: 165px;
+	position: absolute;
+	z-index: 0;
+	top: 5px;
+	right: 0px;
+}
+#site #banner #serencam:hover {
+	opacity: 0.8;
+	cursor:pointer;
+}
+img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#site #icerikOrta #uyeAlani #girisYap fieldset {
+	margin: 0px;
+	padding: 5px;
+	border: 1px solid #999;
+	width: 270px;
+	position: absolute;
+	top: 5px;
+	right: 0px;
+}
+#site #icerikOrta #uyeAlani #girisYap fieldset legend {
+	text-align: right;
+	font-weight: bolder;
+}
+#site #banner #slogan:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+#site #icerikOrta #uyeAlani {
+	position: absolute;
+	height: 145px;
+	width: 385px;
+	top: -5px;
+	right: 10px;
+	padding: 0px;
+	z-index:10000;
+}
+#site #icerikOrta #uyeAlani #girisYap {
+	text-align: right;
+}
+#site #icerikOrta #etkinlik #icerik ul li {
+	position: relative;
+}
+#site #icerikOrta #etkinlik #icerik ul li .resim {
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	top: 24px;
+	right: 0px;
+	overflow: hidden;
+	display: none;
+	z-index:1500;
+}
+#site #icerikOrta #etkinlik #icerik ul .gecti a {
+	color: #B6B10A;
+}
+#site #icerikOrta #etkinlik #icerik ul li:hover .resim {
+	display: block;
+}
+
+#site #icerikOrta #uyeAlani #girisYap fieldset #bilgi {
+
+}
+#site #icerikOrta #uyeAlani #girisYap fieldset #bilgi ul {
+	margin: 0px;
+	padding: 0px;
+}
+#site #icerikOrta #uyeAlani #girisYap fieldset #bilgi ul li {
+	color: #000;
+	list-style-type: none;
+}
+#site #icerikOrta #uyeAlani #girisYap fieldset #bilgi ul li a {
+	color: #000;
+	text-decoration: none;
+}
+#site #icerikOrta #altIcerik #sol #yazarlar .yazar .isim a {
+	color: #FFF;
+	text-decoration: none;
+}
+#site #icerikOrta #uyeAlani #girisYap fieldset #bilgi ul li a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+.yuzenKutu h1 {
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	z-index:2000;
+	background-color:#FFF;
+	font-family:"Comic Sans MS", cursive;
+	font-size:14px;
+	padding:5px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+.ayrintiBolum {
+	position:fixed;
+	top:30px;
+	right:20px;
+	border: 1px solid #999;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	height:43px;
+	background-color:#fff;
+	box-shadow:0px 0px 5px #000;
+	z-index:250000;
+}
+.ayrintiBolum ul {
+	margin: 0px;
+	padding: 0px;
+	margin-right:15px;
+}
+.ayrintiBolum li {
+	margin: 3px;
+	padding: 3px;
+	float: left;
+	position: relative;
+	list-style-type: none;
+	width: 32px;
+	text-align: center;
+}
+.haberResim {
+	float:left;
+	margin:5px;
+}
+a {
+	color: #000;
+	text-decoration:none;
+}
+#yazarUst {
+	margin: 10px;
+	height: 128px;
+	position: relative;
+	float:right;
+	width: 650px;
+	overflow:hidden;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+#yazarUst #resim {
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+#yazarUst #isim {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:"Times New Roman", Times, serif
+}
+.digerIcerik {
+	float: left;
+	width: 250px;
+}
+.digerIcerik ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.digerIcerik li {
+	background-image: url(../resimler/tema/ok.png);
+	height: 19px;
+	padding-top: 5px;
+	padding-left: 30px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+	list-style-type: none;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+#yazarUst #detay {
+	position: absolute;
+	right: 130px;
+	bottom: 0px;
+}
+#yazarUst #detay ul {
+	margin: 0px;
+	padding: 0px;
+}
+#yazarUst #detay li {
+	margin: 5px;
+	float: left;
+	height: 32px;
+	width: 32px;
+	list-style:none;
+	z-index:0;
+}
+.kucukKar {
+	text-transform:lowercase;
+	}
+#icerikYazi{
+	width:100%;
+	position:relative;
+}
+#icerikYazi .icerikListe li{
+	float:left;
+	background:url("../resimler/dock/15.png");
+	width:128px;
+	height:128px;
+	overflow:hidden;
+	font-size:16px;
+	position:relative;
+	margin:5px;
+	opacity:0.7;
+}
+#icerikYazi .icerikListe .yazi{
+	position:absolute;
+	bottom:10px;
+	left:0px;
+	color:#000;
+	text-shadow:5px 5px 5px #000;
+	width:100%;
+	text-align:center;
+}
+#icerikYazi .icerikListe li:hover {
+	opacity:1;
+}
+.icerikAlan {
+	overflow:auto;
+
+}
+-->
+
+

@@ -1,0 +1,685 @@
+@font-face {
+    font-family: zomni;
+    src: url(font.ttf);
+}
+.progress {
+	position:fixed;
+	width:10px;
+	bottom:0px;
+	height:0%;
+	background:green;
+	z-index:100000;
+	transition:all 0.5s;
+}
+.ui-panel .ui-screen-hidden {
+	display:block !important;
+}
+.progress.p1 {
+	left:0px;
+} 
+.progress.p2 {
+	right:0px;
+} 
+.progress puan {
+	position: absolute;
+    top: -30px;
+    text-align: center;
+    color: yellow;
+	display:none;
+    font-size: 30px;
+}
+.loading {
+	background:url(onlylogo.png) rgba(0,0,0,0.7) center no-repeat;
+	background-size:50%; 
+	position:absolute;width:100%;height:100%;z-index:100000000;
+	font-size:40px;
+	text-align:center;
+	display:none;
+    padding-top:20px
+ 
+}
+.soruResim {
+min-width:100px;
+display:block;
+margin:0 auto;
+max-height:150px;
+}
+.user {
+	width:192px;
+}
+.uni {
+	width:137px
+}
+a {
+	text-decoration:none;
+	box-shadow:none !important;
+}
+.profilepic {
+    width: 128px;
+    height: 128px;
+    border: solid;
+    border-radius: 100%;
+    display: block;
+    margin: 5px auto;
+}
+sayi2 {
+	position: absolute;
+    top: 4px;
+    right: 6px;
+    background: red;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 100%;
+    font-size: 12px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.39);
+}
+.liste h3 {
+	margin: 0px;
+	padding: 0px 50px;
+	font-weight: normal;
+}
+.liste p {
+	padding: 0px 50px;
+    margin: 0px;
+    font-weight: normal;
+    font-size: 13px;
+}
+.liste li:after {
+	display:block;
+	content:'';
+	clear:both;
+}
+.liste li {
+	list-style-type:none;
+}
+.liste .ui-btn {
+	text-align: left;
+    padding: 5px;
+}
+.liste {
+	margin:0;
+	padding: 0 10px;
+}
+.liste .profilepic {
+	float:left;
+	width: 40px;
+    height: 40px;
+	margin-left: 5px;
+}
+div[data-role="popup"] {
+    min-width: 292px;
+    max-width: 700px;
+    width: 100% !important;
+}
+sayi {
+	position: absolute;
+    top: 4px;
+    right: 6px;
+    background: red;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 100%;
+    font-size: 12px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.39);
+}
+.padding0 {
+	padding:0 !important;
+}
+.radius10 {
+	border-radius:10px !important; 
+}
+.textcenter {
+		text-align:center !important;
+}
+.cevap,.cevap2 {
+	/*transition:all 0.5s !important;*/
+	white-space:normal !important;
+	max-height:106px;
+}
+
+@-webkit-keyframes color_change {
+    from {color: red;}
+    to {color: yellow;}
+}
+/*
+@-webkit-keyframes user1 {
+    from {top: -500px;}
+    to {top:100px;}
+}
+@-webkit-keyframes user2 {
+    from {bottom: -500px;}
+    to {bottom:100px;}
+}
+*/
+.imready {
+	-webkit-animation: color_change 1s infinite alternate;
+	-moz-animation: color_change 1s infinite alternate;
+	-ms-animation: color_change 1s infinite alternate;
+	-o-animation: color_change 1s infinite alternate;
+	animation: color_change 1s infinite alternate;
+}
+.finish {
+	text-align:center;
+	margin-top:10px;
+}
+.profiles {
+	margin-top:10px;
+}
+.start {
+	text-align:center;
+    position: absolute;
+    
+	z-index: 10023;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+	background: url(transparan.png) no-repeat center #000;
+	background-size: contain;
+}
+.start .user2 {
+		position:absolute;
+	z-index:1000;
+	bottom:100px;
+	width:100%;
+	}
+
+.start .user1 {
+	position:absolute;
+	z-index:1000;
+	top:100px;
+	width:100%;
+
+	}
+.run {
+	top:-100px;
+}
+.butonlist img {
+	float:left;
+	width:64px;
+}
+.butonlist i {
+font-size: 14px !important;
+}
+.butonlist .ui-btn-inline {
+	float:right;
+	font-size: 12px;
+}
+.sonmesaj {
+    background-color: white;
+    color: black;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    white-space: normal;
+    padding: 40px 0;
+}
+score {
+	display:block;
+	background-color:green;
+	width:100px;
+	margin:10px auto;
+	border-radius:10px;
+	font-size:20px;
+}
+round {
+	font-size:30px;
+	font-weight:bold;
+	color:white;
+	background-color: #266A7E;
+	padding:3px 10px;
+	border-radius: 0px 0px 20px 20px;
+	display:block;
+	width:100px;
+	margin:0 auto
+
+}
+.counter durum {
+	display:block;
+	position:relative;
+	z-index:1000;
+	text-align:center;
+	font-size:24px;
+	text-shadow:0 2px 0px #000;
+
+}
+.counter {
+position:relative;
+display:block;
+width: 97%;
+height: 30px;
+border-radius: 30px;
+overflow: hidden;
+margin-top: 30px;
+background-color: #5D5D5D;
+border: solid 3px;
+box-shadow: inset 0 0 3px #000;
+z-index: 10000;
+}
+.counter saniye {
+position:absolute;
+box-shadow: inset 0 0 3px #000;
+border-radius: 30px;
+top:0px;
+left:0px;
+width: 100%;
+height: 100%;
+background-color: #0E9603;
+display:block;
+transition: all 1s;
+}
+.ui-tabs {
+	border-radius:10px;
+	padding:5px 10px;
+	margin:7px 0;
+}
+.resultitem .unilogo {
+	width:60px;
+	border-radius:3px;
+	box-shadow:0px 2px 3px rgba(0,0,0,0.4);
+}
+.resultitem .user1uni {
+	position:absolute;
+	left:10px;
+	top:10px;
+}
+.resultitem .user2uni {
+	position:absolute;
+	right:10px;
+	top:10px;
+}
+body {
+	font-family:zomni,arial !important;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: initial;
+    background-image: none;
+    color: initial;
+}
+.ui-input-search {
+    background-color: white;
+    color: black;
+    text-shadow: none;
+    margin: 0 4px;
+    /* border-bottom: solid 4px #000; */
+}
+.uyari {
+	background:red !important;
+}
+.bigicon {
+font-size:80px;display:block;margin:0 auto;width:80px;
+}
+.middleicon {
+    font-size: 30px;
+    display: block;
+}
+#profil .rozet {
+	width:128px;
+	height:150px;
+	position:absolute;
+	right:0px;
+	top:0px
+;
+	z-index: 1000;
+}
+#profil .rozet span {
+	font-size: 18px;
+	position: relative;
+	width: 100%;
+	left: 0px;
+	text-align: center;
+	top: 23px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	margin: 0 auto;
+	background: #0063A4;
+	color: white;
+	border-radius: 38px;
+	text-shadow: none;
+}
+#profil .rozet1 {background:url(1.png);background-size:100%;}
+#profil .rozet2 {background:url(2.png);background-size:100%;}
+#profil .rozet3 {background:url(3.png);background-size:100%;}
+#profil #cover {
+	    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index:0;
+    border-radius:10px;
+    opacity:0.3;
+}
+#profil img {
+	width:256px;
+}
+#profil {
+	position:relative;
+    text-align:center;
+    margin-bottom:10px;
+    padding:10px;
+    background: #306C7E;
+   
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin: 7px;
+    border-bottom: solid 4px rgba(0, 0, 0, 0.32);
+    border-top: solid 4px rgba(255, 255, 255, 0.11);
+}
+#profil #resim {
+	z-index:10;
+	position:relative;
+	background-repeat: no-repeat !important;
+	background-color: #f3f3f3 !important;
+	background-size: cover !important;
+	width: 150px !important;
+	height: 150px !important;
+}
+
+div#resim {}
+
+#profil #unvan {
+    font-size:20px;
+ 	position:relative;
+ 	z-index:10;
+    font-style: italic;
+    color: yellow;
+}
+#profil #isim {
+    font-size: 30px;
+    font-weight:bold;
+    position:relative;
+    z-index:10;
+}
+#profil > i {
+    font-size:100px
+;
+    background-color: rgba(0, 0, 0, 0.43);
+    border-radius: 100%;
+    padding: 10px 21px;
+    position:relative;
+    z-index:10;
+}
+#navi {
+
+}
+#navi i {
+  font-size:40px;
+  display:block;
+  
+}
+navi a {
+	position:relative;
+	overflow:none;
+}
+#navi a span {
+  font-size:14px;
+  position:absolute;
+  top:-3px;
+  right:0px;
+  background-color:red;
+  padding:5px 10px;
+  border-radius:15px;
+
+  box-shadow: 0px 1px 1px #000;
+}
+#navi2 {
+
+}
+#navi2 i {
+  font-size:40px;
+  display:block;
+  
+}
+#navi2 a span {
+  font-size: 14px;
+}
+.ui-listview img {
+    background-color: black;
+    padding: 10px 12px;
+}
+.ui-tabs-anchor {
+	margin:10px;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+.center {
+display:block;
+margin:0 auto;
+}
+.ui-tabs-active a {
+background:orange !important;
+}
+.select {
+/*box-shadow:0 0 30px !important;*/
+}
+.soru * {
+	/*transition:all .5s;*/
+	position:relative;
+}
+.dogru{
+background:green !important;
+}
+.yanlis {
+background:red !important;
+}
+/*
+a:active,.ui-btn:active {
+opacity:0.7 !important;
+border-bottom:none !important;
+box-shadow:none !important;
+border-top: solid 4px rgba(0, 0, 0, 0) !important;
+}
+*/
+a:active,.ui-btn:active {
+background:yellow !important;
+color:black !important;
+box-shadow:none !important;
+text-shadow:none !important;
+	}
+.padding10 {
+	padding:10px !important;
+}
+.margin0 {
+	margin:0 !important;
+}
+.margin10 {
+	margin:10px 0 !important;
+}https://zomni.xyz/m/profile.php#oyunSec
+.padding0 {
+	padding:0 !important;
+}
+.bildirim {
+    background-color: rgba(255, 235, 74, 0.79) !important;
+    color: black !important;
+    text-shadow: none !important;
+    white-space: normal;
+}
+.bildirim span {
+	padding: 0px;
+}
+.panelAlan .profilepic {
+	width: 106px;
+	height: 106px !important;
+	/* float: left; */
+	border: none;
+	position: absolute;
+	right: -22px;
+	top: -25px;
+	border: solid 4px #ECF0F1;
+	background: #3A3737;
+	z-index: 0;
+}
+clear {
+	display:block;
+	clear:both;
+	
+}
+.panelAlan:after {
+	clear:both;
+	content:'';
+	display:block;
+}
+.panelAlan {
+	padding: 9px;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	clear: both;
+	max-width:700px;
+}
+.dialogbox {
+	min-height: 58px;
+	position: relative;
+	margin: 11px 0px;
+	/* white-space: nowrap; */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 100px;
+	border: solid 3px #FFF;
+	/* max-height: 125px; */
+	transition:all 0.5s;
+	position:relative;
+	left:0px;
+}
+.dialogbox button {
+	width: 13%;
+	position:absolute;
+	right: 0px;
+	top: -5px;
+	box-shadow:none !important;
+	border-bottom: solid 1px #000 !important;
+	z-index: 10;
+	/* height: 39px; */
+	background: none !important;
+	color: black !important;
+	font-size: 30px;
+	text-shadow: 0px 2px 3px #000 !important;
+}
+.dialogbox button i {
+	color:#fff !important;
+	text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.38) !important;
+}
+.dialogbox textarea {
+	float:left	;
+	width:80%;
+	margin-left:10px
+;
+	height: 39px !important;
+	position: absolute;
+	display: block;
+	overflow: hidden !important;
+	font-size: 16px;
+}
+.dialogbox:hover .ui-navbar {
+	display:block;
+}
+.dialogbox .ui-navbar {
+margin:0px;
+position: absolute;
+top: -5px;
+/* display:none; */
+right: -5px;z-index: 100;}
+.dialogbox .ui-navbar a * {
+	color:#fff;
+}
+.dialogbox .ui-navbar a {
+	margin:0px;
+	padding: 3px 9px;
+	color:#fff;
+	font-size: 12px;
+	/* width: 28px; */
+}
+@-moz-keyframes colored /* Firefox */
+{
+0%   {background:#c0392b;}
+50%  {background:#e67e22;}
+100%   {background:#c0392b;}
+}
+@keyframes colored /* Firefox */
+{
+0%   {background:#c0392b;}
+50%  {background:#e67e22;}
+100%   {background:#c0392b;}
+}
+ 
+@-webkit-keyframes colored /* Firefox */
+{
+0%   {background:#c0392b;}
+50%  {background:#e67e22;}
+100%   {background:#c0392b;}
+}
+.colored {
+	background:#c0392b;
+animation:colored 1s;
+-moz-animation:colored 1s infinite; /* Firefox */
+-webkit-animation:colored 1s infinite; /* Safari and Chrome */
+  }
+.headerbutton {
+	font-size:40px;
+} 
+ .yatay2  {
+    margin: 0 10px !important;
+}
+.yatay2 li {
+    float: left !important;
+    width: initial !important;
+}
+ 
+.dialogbox .date {
+	display: block;
+	font-size: 12px;
+	margin-top: 5px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 10;
+	background: rgba(255, 255, 255, 0.6);
+	padding: 1px 5px;
+	border-radius: 3px 0 0;
+}
+ .users {
+	width: 300px;
+	overflow:hidden !important;
+	position: relative;
+	/* overflow: hidden !important; */
+	border-radius: 10px !important;
+}
+.users .profilepic {
+	overflow:hidden !important;
+
+}
+.users span {
+	color:#fff !important;
+	text-align:left !important;
+	display: block;
+	position: relative;
+}
+.panelAlan .yatay {
+	margin:0 5px;
+}
+.panelAlan * {
+	text-shadow:none !important;
+	/*color:#333;*/
+}
+.panelAlan > h2 {
+	margin: 0px;
+	margin-bottom: 10px;
+}
+.panelAlan a {/* color:#333; */}
+/*.panelAlan a:hover, .panelAlan a:visited {color:#333;}*/

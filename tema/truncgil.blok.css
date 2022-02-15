@@ -1,0 +1,102 @@
+blok1,blok2,blok3,blok4 {display:inline;float:left; background:transparent; }
+.temiz {background:transparent;margin:0;}
+.blok1,.blok2,.blok3,.blok4 {display:inline;float:left; min-height:100px;}
+blok1 > *,blok2 > *,blok3 > *,blok4 > * {max-width:100%;}
+.blok1 > *,.blok2 > *,.blok3 > *,.blok4 > * {max-width:100%;}
+blok1 img,blok2 img,blok3 img,blok4 img {max-width: 96%;}
+.blok1 img,.blok2 img,.blok3 img,.blok4 img {max-width:100%;}
+blok1 {width:25%;}
+blok2 {width:50%;}
+blok3 {width:75%;}
+blok4 {width:100%;margin: 0}
+.blok1 {width:25%;}
+.blok2 {width:50%;}
+.blok3 {width:75%;}
+.blok4 {width:100%;}
+.yaziortali {text-align:center;}
+margin10 {
+display:block;
+margin:10px;
+clear:both;
+}
+.sol-menu {
+margin-bottom: 10px;
+border: solid 1px #FFFFFF;
+border-radius: 10px;
+padding: 10px;
+background: #044461;
+font-size: 20px;
+box-shadow: 0 0 8px 1px #CACACA;
+}
+.sol-menu li {
+	position:relative;
+}
+.sol-menu a {
+	color:#fff;
+	text-shadow:0px 1px 2px #000;
+	border-radius:5px;
+	display:block;
+	padding:5px;
+	margin:5px 0;
+	background:url(img/cizgi2.png) bottom left no-repeat;
+	font-size: 15px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.ucnokta {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.bilgi {
+font-size: 12px;
+margin-top: -15px;
+color: rgb(162, 162, 162);
+background: rgb(243, 243, 243);
+padding: 3px 9px;
+}
+.sag {
+	float:right;
+}
+.sol-menu li:hover > a, .sol-menu .secili {
+color: #fff;
+text-shadow: 0px 1px 2px #000;
+border-radius: 5px;
+display: block;
+padding: 5px;
+background: rgb(0, 0, 0);
+}
+.sol-menu .alt {
+	position: absolute;
+	left: 100%;
+	top: -5px;
+	background: #0093ad;
+	padding: 0 11px;
+	display: none;
+	z-index: 100000;
+}
+.sol-menu li:hover > .alt {
+	display:block;
+}
+
+.sol-menu .alt li {
+	white-space: nowrap;
+	margin: 0 10px;
+}
+.sol-menu li .fa {
+	position:absolute;
+	top:10px;
+	right:10px;
+	display:none;
+}
+.sol-menu li:hover > .fa {
+	display:block;
+}
+.sol-menu .alt a {
+	padding-right: 150px;
+}
+clear, .clear {
+	clear: both;
+	display:block;
+}

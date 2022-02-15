@@ -1,0 +1,200 @@
+/*
+Düzenlemeler: Ümit Tunç
+2011 Aralik
+*/
+.window_panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 2000;
+  background: #eee;
+  color: #222;
+  font-family: Arial;
+  font-size: 14px;
+  text-decoration: none;
+  clear: both;
+  text-align: left;
+  vertical-align: top;
+  border: solid 3px #FFFFFF;
+  overflow: hidden;
+  border-radius: 0px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.38);
+  /* border-radius: 12px; */
+
+}
+
+.window_panel .window_header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	height:100px;
+}
+
+.window_panel .window_header_normal {
+	/*background: url('../img/header_alt.jpg') repeat-x;  change to use jquery-ui theme instead */
+	background:rgb(54, 159, 210);
+	height: 24px;
+	padding: 2px 5px;
+	text-align: left;
+	cursor: move;
+}
+
+.window_panel .window_header_minimize {
+  background: rgb(54, 159, 210);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 0px;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.33);
+  border: none;
+}
+
+.window_panel .window_header_minimize_vertical {
+	text-align: center;
+}
+
+.window_panel .window_header_maximize {
+  background: rgb(31, 134, 184);
+  height: 20px;
+  padding: 2px 5px;
+  text-align: left;
+  cursor: default;
+}
+
+.window_panel .window_frame {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.window_panel .window_footer {
+	width: 100%;
+	height: 16px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-top: 1px solid #aaa;
+	overflow: hidden;
+	font-size: 12px;
+}
+
+.window_panel .window_footer div {
+	margin-left: 5px;
+}
+
+.window_panel .window_header .window_title_icon {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+
+.window_panel .window_header .window_title_text {
+	font-weight: normal;
+  font-size: 17px;
+  overflow: hidden;
+  color: #fff;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  position: absolute;
+  left: 24px;
+  top: 3px;
+  margin-left: -20px;
+  font-family: regular;
+  border-radius: 0px;
+  opacity: 1;
+}
+
+.window_panel .window_header .window_title_text_vertical {
+	left: 20px;
+}
+
+.window_panel .window_header .window_title_text_vertical_with_icon {
+	left: 0;
+	top: 23px;
+}
+
+.window_panel .window_header .window_function_bar {
+	height: 23px;
+	width: 72px;
+	position: absolute;
+	right: 0;
+	top: 2px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.window_panel .window_header .window_icon_button {
+	width: 16px;
+	height: 16px;
+	z-index: 3200;
+	cursor: pointer;
+	float: right;
+	margin-right: 4px;
+	margin-top: 2px;
+}
+
+.window_panel .window_header .bookmarkImg {
+	background: url(../img/sk.png) no-repeat;
+	top: 4px;
+	display: none;
+}
+
+.window_panel .window_header .minimizeImg {
+	background: url(../img/min.png) no-repeat;
+	top: 4px;
+}
+
+.window_panel .window_header .cascadeImg {
+	background: url(../img/max.png) no-repeat;
+	top: 4px;
+}
+
+.window_panel .window_header .maximizeImg {
+	background: url(../img/max.png) no-repeat;
+	top: 4px;
+}
+
+.window_panel .window_header .closeImg {
+	background: url(../img/kapat.png) no-repeat;
+	top: 4px;
+}
+.bookmarkImg:hover, .minimizeImg:hover, .maximizeImg:hover, .closeImg:hover, .cascadeImg:hover  {
+	opacity: 0.7;
+}
+.window_panel .frame_loading {
+	background: url('../img/loading.gif') no-repeat;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 14px;
+	font-weight: bold;
+	color: #777;
+	padding-left: 20px;
+	text-align: left;
+	text-decoration: none;
+	clear: both;
+	cursor: crosshair;
+}
+
+#window_overlay {
+	background: black;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+}

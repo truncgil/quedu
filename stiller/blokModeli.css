@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+.blok {
+	padding: 0px;
+	width: 220px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 10px;
+}
+.blok .baslik{
+	height: 29px;
+	width: 220px;
+	font-weight: bold;
+	font-size: 13px;
+}
+.blok .baslik .sag {
+	background-image: url(../resimler/tema/sagBlok/blokSag.png);
+	float: right;
+	height: 29px;
+	width: 12px;
+}
+.blok .baslik .sol{
+	background-image: url(../resimler/tema/sagBlok/blokSol.png);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 12px;
+	float: left;
+}
+.blok .baslik .orta {
+	background-image: url(../resimler/tema/sagBlok/blokOrta.png);
+	float: left;
+	height: 29px;
+	width: 196px;
+	position: relative;
+}
+.blok .baslik .orta .ikon {
+	position: absolute;
+	top: -10px;
+	z-index:100;
+}
+.blok .baslik .orta .yazi {
+	position: absolute;
+	left: 40px;
+	top: 6px;
+}
+.blok .icerik {
+	padding: 5px;
+}
+.blok .icerik ul {
+	margin: 0px;
+	padding-left: 10px;
+}
+.blok .icerik ul li {
+	list-style-type: none;
+	background-image: url(../resimler/tema/ok.png);
+	background-repeat: no-repeat;
+	height: 20px;
+	padding-left: 28px;
+	padding-top: 4px;
+}
+.blok .icerik ul li:hover {
+	background-color: #FFE9BB;
+}
+.blok .icerik ul li a {
+	color: #333;
+	text-decoration: none;
+}

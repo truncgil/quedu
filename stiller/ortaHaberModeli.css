@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ortaHaber {
+	width: 397px;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+}
+.ortaHaber .baslik{
+	height: 29px;
+	width: 397px;
+}
+.ortaHaber .baslik .orta {
+	background-image: url(../resimler/tema/ortaHaber/ortaHaberOrta.png);
+	width: 387px;
+	height: 29px;
+	background-repeat: repeat-x;
+	float: left;
+	position: relative;
+}
+.ortaHaber .baslik .orta .simge {
+	position: absolute;
+	height: 32px;
+	width: 32px;
+	left: -1px;
+	top: -5px;
+}
+.ortaHaber .baslik .sag {
+	background-image: url(../resimler/tema/ortaHaber/ortaHaberSag.png);
+	float: right;
+	height: 29px;
+	width: 5px;
+}
+.ortaHaber .baslik .sol {
+	background-image: url(../resimler/tema/ortaHaber/ortaHaberSol.png);
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 5px;
+	float: left;
+}
+.ortaHaber .baslik .orta .yazi {
+	position: absolute;
+	left: 40px;
+	top: 5px;
+	font-weight: bold;
+}
+.ortaHaber .icerik {
+	padding: 10px;
+	font-size: 12px;
+	position: relative;
+	height: 150px;
+	background-image: url(../resimler/tema/ortaHaber/alt.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+.ortaHaber .icerik a {
+	font-size: 10px;
+}
+.ortaHaber .icerik ul li .resim img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.ortaHaber .icerik ul li:hover {
+	background-image: url(../resimler/tema/menuUzerinde.jpg);
+	background-repeat: repeat-x;
+	padding-left: 10px;
+}
+.ortaHaber .icerik ul {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+.ortaHaber .icerik ul li {
+	list-style-type: none;
+	background-image: url(../resimler/tema/ok.png);
+	background-repeat: no-repeat;
+	height: 23px;
+	padding-top: 6px;
+	padding-left: 28px;
+	background-position: 1px;
+}
+.ortaHaber .icerik ul li .resim {
+	position: absolute;
+	height: 100px;
+	width: 150px;
+	top: 10px;
+	right: 10px;
+	overflow: hidden;
+	display: none;
+}
+.ortaHaber .icerik ul li:hover a {
+	font-size: 14px;
+	color: #FFF;
+}
+.ortaHaber .icerik ul li:hover .resim, .ortaHaber .icerik ul li:first-child .resim {
+	display: block;
+}
+.ortaHaber .icerik ul li a {
+	text-decoration: none;
+	color: #000;
+}

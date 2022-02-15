@@ -1,0 +1,19 @@
+@font-face{
+src: url("regular.ttf");
+font-family:regular;
+}
+@font-face{
+src: url("regular.ttf");
+font-family:regular2;
+}
+@font-face{
+src:url("bold.ttf");
+font-family:bold;
+}
+
+body {
+  font-family: regular;
+  font-size: 20px;
+  -webkit-text-stroke: 0.35px;
+
+}

@@ -1,0 +1,64 @@
+@charset "utf-8";
+<!--
+input[type=text]:focus, input[type=password]:focus {
+	background-color:#FFFFF2;
+	background-image:none;
+}
+input{
+	margin:2px;
+}
+input[type=text], input[type=password], input[type=mail], input[type=url] {
+	background-image: url(../resimler/tema/formObjeleri/inputArka.png);
+	background-repeat: repeat-x;
+	height: 22px;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-left: 5px;
+	background-position: left bottom;
+	border: 1px solid #999;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+input[type=submit] {
+	background-image: url(../resimler/tema/formObjeleri/submit.png);
+	height: 28px;
+	width: 67px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-color: #FFF;
+	font-size: 12px;
+	padding-bottom: 3px;
+	overflow: hidden;
+	color:#000;
+}
+textarea {
+	background-image: url(../resimler/tema/formObjeleri/inputArka.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	border: 1px solid #999;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+fieldset {
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background-color:#FFF;
+}
+input[type=submit]:hover {
+	background-image: url(../resimler/tema/formObjeleri/submitOver.png);
+}
+form {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+}
+-->
+

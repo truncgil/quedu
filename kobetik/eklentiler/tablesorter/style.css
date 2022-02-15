@@ -1,0 +1,75 @@
+/* tables */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+	border:solid 1px #CACACA;
+
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: rgb(238, 238, 238);
+	border-bottom: 1px solid #DBDBDB;
+	font-size: 10pt;
+	padding: 10px;
+	border-right: solid 1px #CCC;
+}
+table.tablesorter thead tr th:last-child, table.tablesorter tfoot tr th:last-child {
+	border-right:none;
+}
+table.tablesorter thead tr .header {
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td{
+	text-align:center;
+	color: #3D3D3D;
+	position:relative;
+	background-color: #FFF;
+	vertical-align: middle;
+	border-right:solid 1px #CCC;
+	height:25px;
+}
+table.tablesorter input[type='text'], table.tablesorter input[type='password'], table.tablesorter input[type='number'] {
+	width: 100%;
+	border: none;
+	background: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	padding: 0 10px;
+	outline:none;
+}
+.yeni * {
+	background:rgb(255, 255, 200) !important;
+	font-weight:bold;
+}
+.yeni .fa {
+	background:rgb(255, 255, 200) !important;
+	font-weight:normal;
+	color:rgb(170, 136, 47);
+}
+table.tablesorter input:focus {
+	background: rgb(255, 230, 218);
+}
+table.tablesorter tbody td:last-child{
+	border-right:none;
+}
+table.tablesorter tbody tr:hover td{
+	background:rgb(243, 243, 243);
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
